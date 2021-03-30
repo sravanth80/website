@@ -96,7 +96,7 @@ ul {
 .experience-list li:nth-of-type(even)::before {
   position: absolute;
   right: -13px;
-  top: 25%;
+  top: 26%;
   content: '';
   width: 25px;
   height: 25px;
@@ -351,4 +351,24 @@ ul {
 }
 .space{
   padding-top: 20px;
+}
+
+.effect{
+  color: rgb(134, 134, 134);
+  animation-duration: 30s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+  min-height: 48px;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
